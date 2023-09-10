@@ -54,15 +54,4 @@ export class HomePage implements OnInit, AfterViewInit {
       animation.play();
     }
   }
-
-
-  public animateItem(elementRef: any) {
-    this.animationController
-      .create()
-      .addElement(elementRef)
-      .iterations(1)
-      .duration(600)
-      .fromTo('transform', 'translate(100%)', 'translate(0%)')
-      .play();
-  }
 }
